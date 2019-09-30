@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">OnCampus उधार!</string>
+    <string name="title_activity_my_advertisement">My Ads</string>
+
+    <string-array name="estate">
+        <item>IIIT</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Automobiles</item>
+        <item>Movies</item>
+        <item>Eletronics</item>
+        <item>Fashion</item>
+        <item>Esport</item>
+        <item>Music</item>
+        <item>Books</item>
+    </string-array>
+
+</resources>

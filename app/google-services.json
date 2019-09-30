@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "694333456754",
+    "firebase_url": "https://campuslabs-fc332.firebaseio.com",
+    "project_id": "campuslabs-fc332",
+    "storage_bucket": "campuslabs-fc332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694333456754:android:1f4ecfc9464d483f461deb",
+        "android_client_info": {
+          "package_name": "olx.tcardoso.olxapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694333456754-mqmefoo6i057u0s7cde6rco4ln4k11qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnf53aRSefIjm6F2D5MPXmeUecKAGhg5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694333456754-mqmefoo6i057u0s7cde6rco4ln4k11qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
