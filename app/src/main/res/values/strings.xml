@@ -1,7 +1,17 @@
 <resources>
     <string name="app_name">OnCampus उधार!</string>
     <string name="title_activity_my_advertisement">My Ads</string>
-
+    <string name="btn_login">Login</string>
+    <string name="btn_link_signup">"Not have an account? Signup Here"</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="btn_sign_up">Register</string>
+    <string name="btn_link_login">Already Regsitered? Sign in here</string>
+    <string name="hint_dob">Date of Birth</string>
+    <string name="btn_send_password">Reset Password</string>
     <string-array name="estate">
         <item>IIIT</item>
     </string-array>

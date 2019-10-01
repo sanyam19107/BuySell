@@ -5,4 +5,6 @@
     <color name="colorAccent">#3498DB</color>
     <color name="colorText">#0F2524</color>
     <color name="colorBackground">#EFF4FD</color>
+    <color name="bg_login">#FFFFFF</color>
+    <color name="login_button_background">#3498DB</color>
 </resources>

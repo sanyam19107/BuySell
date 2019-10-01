@@ -35,6 +35,8 @@
         </activity>
         <activity android:name=".activity.RegisterAdvertisementActivity" />
         <activity android:name=".activity.ProductDetailActivity"></activity>
+        <activity android:name=".activity.RegisterActivity"></activity>
+        <activity android:name=".activity.ForgotPasswordActivity"></activity>
     </application>
 
 </manifest>

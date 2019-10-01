@@ -308,7 +308,13 @@ public class AdvertisementActivity extends AppCompatActivity {
 
         if(authentication.getCurrentUser() == null){
             menu.setGroupVisible(R.id.group_logout,  true);
+            menu.setGroupVisible(R.id.group_logged,  false);
         }else{ //logged
+            String idUser = ConfigurationFirebase.getIdUser();
+            DatabaseReference advertisementRef = ConfigurationFirebase.getFirebase()
+                    .child("users")
+                    .child(idUser);
+            menu.setGroupVisible(R.id.group_logout,  false);
             menu.setGroupVisible(R.id.group_logged,  true);
         }
         return super.onPrepareOptionsMenu(menu);

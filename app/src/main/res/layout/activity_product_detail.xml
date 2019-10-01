@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:onClick="visualizePhone"
         android:text="Phone"
-        android:theme="@style/botaoPadrao" />
+        android:theme="@style/themeName" />
 
 
 </LinearLayout>

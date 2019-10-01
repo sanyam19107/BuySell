@@ -8,7 +8,7 @@
             android:title="My Ads" />
 
         <item android:id="@+id/menu_sair"
-            android:title="Get Out" />
+            android:title="Log Out" />
 
     </group>
 
@@ -18,5 +18,13 @@
             android:title="Register / LogIn"
             app:showAsAction="always" />
     </group>
+
+    <group android:id="@+id/group_name" android:visible="false">
+
+        <item android:id="@+id/menu_name"
+            android:title=""
+            app:showAsAction="always" />
+    </group>
+
 
 </menu>

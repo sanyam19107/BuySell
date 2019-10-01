@@ -106,5 +106,5 @@
         android:layout_height="wrap_content"
         android:onClick="validarDadosAnuncio"
         android:text="Register AD"
-        android:theme="@style/botaoPadrao" />
+        android:theme="@style/themeName" />
 </LinearLayout>

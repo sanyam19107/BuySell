@@ -6,9 +6,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/login_button_background</item>
     </style>
 
-    <style name="botaoPadrao" parent="Theme.AppCompat.Light">
+    <style name="themeName" parent="Theme.AppCompat.Light">
 
         <item name="colorControlHighlight">#FFC107</item>
         <item name="colorButtonNormal">@color/colorPrimary</item>
