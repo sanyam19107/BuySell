@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "694333456754",
-    "firebase_url": "https://campuslabs-fc332.firebaseio.com",
-    "project_id": "campuslabs-fc332",
-    "storage_bucket": "campuslabs-fc332.appspot.com"
+    "project_number": "239914582425",
+    "firebase_url": "https://oncampusudhaar-c789f.firebaseio.com",
+    "project_id": "oncampusudhaar-c789f",
+    "storage_bucket": "oncampusudhaar-c789f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:694333456754:android:1f4ecfc9464d483f461deb",
+        "mobilesdk_app_id": "1:239914582425:android:a12ecc425b9f6f384c5308",
         "android_client_info": {
-          "package_name": "olx.tcardoso.olxapp"
+          "package_name": "com.iiitd.onCampusUdhaar"
         }
       },
       "oauth_client": [
         {
-          "client_id": "694333456754-mqmefoo6i057u0s7cde6rco4ln4k11qj.apps.googleusercontent.com",
+          "client_id": "239914582425-golq5drd7hkq1iprq4lh06duho7tftm2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDnf53aRSefIjm6F2D5MPXmeUecKAGhg5k"
+          "current_key": "AIzaSyAJgpzFGvObDx3v7JRKHZ3dUscSqpegnc4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "694333456754-mqmefoo6i057u0s7cde6rco4ln4k11qj.apps.googleusercontent.com",
+              "client_id": "239914582425-golq5drd7hkq1iprq4lh06duho7tftm2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,4 +1,4 @@
-package olx.tcardoso.olxapp;
+package com.iiitd.onCampusUdhaar;
 
 import org.junit.Test;
 

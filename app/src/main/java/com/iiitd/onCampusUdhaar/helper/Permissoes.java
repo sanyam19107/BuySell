@@ -1,4 +1,4 @@
-package olx.tcardoso.olxapp.helper;
+package com.iiitd.onCampusUdhaar.helper;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;

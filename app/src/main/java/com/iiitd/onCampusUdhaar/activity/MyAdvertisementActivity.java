@@ -1,10 +1,9 @@
-package olx.tcardoso.olxapp.activity;
+package com.iiitd.onCampusUdhaar.activity;
 
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -18,16 +17,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 import dmax.dialog.SpotsDialog;
-import olx.tcardoso.olxapp.R;
-import olx.tcardoso.olxapp.adapter.AdapterAdvertisement;
-import olx.tcardoso.olxapp.helper.ConfigurationFirebase;
-import olx.tcardoso.olxapp.helper.RecyclerItemClickListener;
-import olx.tcardoso.olxapp.model.Advertisement;
+import com.iiitd.onCampusUdhaar.R;
+import com.iiitd.onCampusUdhaar.adapter.AdapterAdvertisement;
+import com.iiitd.onCampusUdhaar.helper.ConfigurationFirebase;
+import com.iiitd.onCampusUdhaar.helper.RecyclerItemClickListener;
+import com.iiitd.onCampusUdhaar.model.Advertisement;
 
 public class MyAdvertisementActivity extends AppCompatActivity {
 

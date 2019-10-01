@@ -1,4 +1,4 @@
-package olx.tcardoso.olxapp.activity;
+package com.iiitd.onCampusUdhaar.activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -18,8 +18,8 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
-import olx.tcardoso.olxapp.R;
-import olx.tcardoso.olxapp.helper.ConfigurationFirebase;
+import com.iiitd.onCampusUdhaar.R;
+import com.iiitd.onCampusUdhaar.helper.ConfigurationFirebase;
 
 public class MainActivity extends AppCompatActivity {
 

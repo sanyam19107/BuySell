@@ -1,4 +1,4 @@
-package olx.tcardoso.olxapp.helper;
+package com.iiitd.onCampusUdhaar.helper;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

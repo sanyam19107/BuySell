@@ -1,4 +1,4 @@
-package olx.tcardoso.olxapp.adapter;
+package com.iiitd.onCampusUdhaar.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -13,8 +13,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import olx.tcardoso.olxapp.R;
-import olx.tcardoso.olxapp.model.Advertisement;
+import com.iiitd.onCampusUdhaar.R;
+import com.iiitd.onCampusUdhaar.model.Advertisement;
 
 public class AdapterAdvertisement  extends RecyclerView.Adapter<AdapterAdvertisement.MyViewHolder> {
 

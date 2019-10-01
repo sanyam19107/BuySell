@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "olx.tcardoso.olxapp"
+        applicationId "com.iiitd.onCampusUdhaar"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1

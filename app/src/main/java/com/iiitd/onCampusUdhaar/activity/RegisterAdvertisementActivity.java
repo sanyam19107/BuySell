@@ -1,4 +1,4 @@
-package olx.tcardoso.olxapp.activity;
+package com.iiitd.onCampusUdhaar.activity;
 
 import android.Manifest;
 import android.app.Activity;
@@ -22,21 +22,19 @@ import android.widget.Toast;
 import com.blackcat.currencyedittext.CurrencyEditText;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.santalu.widget.MaskEditText;
 
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 import dmax.dialog.SpotsDialog;
-import olx.tcardoso.olxapp.R;
-import olx.tcardoso.olxapp.helper.ConfigurationFirebase;
-import olx.tcardoso.olxapp.helper.Permissoes;
-import olx.tcardoso.olxapp.model.Advertisement;
+import com.iiitd.onCampusUdhaar.R;
+import com.iiitd.onCampusUdhaar.helper.ConfigurationFirebase;
+import com.iiitd.onCampusUdhaar.helper.Permissoes;
+import com.iiitd.onCampusUdhaar.model.Advertisement;
 
 public class RegisterAdvertisementActivity extends AppCompatActivity implements View.OnClickListener{
 

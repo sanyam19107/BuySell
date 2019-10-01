@@ -1,4 +1,4 @@
-package olx.tcardoso.olxapp.activity;
+package com.iiitd.onCampusUdhaar.activity;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,8 +12,8 @@ import com.squareup.picasso.Picasso;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
-import olx.tcardoso.olxapp.R;
-import olx.tcardoso.olxapp.model.Advertisement;
+import com.iiitd.onCampusUdhaar.R;
+import com.iiitd.onCampusUdhaar.model.Advertisement;
 
 public class ProductDetailActivity extends AppCompatActivity {
 

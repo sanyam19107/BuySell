@@ -1,11 +1,11 @@
-package olx.tcardoso.olxapp.model;
+package com.iiitd.onCampusUdhaar.model;
 
 import com.google.firebase.database.DatabaseReference;
 
 import java.io.Serializable;
 import java.util.List;
 
-import olx.tcardoso.olxapp.helper.ConfigurationFirebase;
+import com.iiitd.onCampusUdhaar.helper.ConfigurationFirebase;
 
 public class Advertisement implements Serializable {
 

@@ -1,4 +1,4 @@
-package olx.tcardoso.olxapp.activity;
+package com.iiitd.onCampusUdhaar.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -28,11 +28,11 @@ import java.util.Collections;
 import java.util.List;
 
 import dmax.dialog.SpotsDialog;
-import olx.tcardoso.olxapp.R;
-import olx.tcardoso.olxapp.adapter.AdapterAdvertisement;
-import olx.tcardoso.olxapp.helper.ConfigurationFirebase;
-import olx.tcardoso.olxapp.helper.RecyclerItemClickListener;
-import olx.tcardoso.olxapp.model.Advertisement;
+import com.iiitd.onCampusUdhaar.R;
+import com.iiitd.onCampusUdhaar.adapter.AdapterAdvertisement;
+import com.iiitd.onCampusUdhaar.helper.ConfigurationFirebase;
+import com.iiitd.onCampusUdhaar.helper.RecyclerItemClickListener;
+import com.iiitd.onCampusUdhaar.model.Advertisement;
 
 public class AdvertisementActivity extends AppCompatActivity {
 

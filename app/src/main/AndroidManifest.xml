@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="olx.tcardoso.olxapp">
+    package="com.iiitd.onCampusUdhaar">
 
     <!-- permission internet -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -31,7 +31,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="olx.tcardoso.olxapp.activity.AdvertisementActivity" />
+                android:value=".activity.AdvertisementActivity" />
         </activity>
         <activity android:name=".activity.RegisterAdvertisementActivity" />
         <activity android:name=".activity.ProductDetailActivity"></activity>
