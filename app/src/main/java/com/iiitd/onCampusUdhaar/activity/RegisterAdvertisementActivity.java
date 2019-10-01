@@ -141,7 +141,7 @@ public class RegisterAdvertisementActivity extends AppCompatActivity implements 
         return advertisement;
     }
 
-    public void validarDadosAnuncio(View view){
+    public void validate(View view){
         String phoneAux = "";
         advertisement = configurateAdvertisement();
         String value = String.valueOf(fieldValue.getRawValue());
