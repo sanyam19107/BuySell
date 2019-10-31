@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    tools:context=".activity.PostAdvertisement">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:layout_marginBottom="30dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20sp">
+
+            <ImageView
+                android:id="@+id/imageRegister1"
+                android:layout_width="1in"
+                android:layout_height="1in"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/pad_value"
+                android:src="@drawable/image_template" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp">
+
+                <Spinner
+                    android:id="@+id/spinnerCategory"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:autofillHints="Select category"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_layout"
+                    android:ems="50"
+                    android:fontFamily="@font/consola"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+                <Spinner
+                    android:id="@+id/rentsellCategory"
+                    android:autofillHints="Sell"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_layout"
+                    android:ems="50"
+                    android:fontFamily="@font/consola"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/RentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/securityPrice"
+                    android:hint="Security Deposit"
+                    android:inputType="numberDecimal"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/search_layout"
+                    android:ems="50"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/consola"/>
+
+                <Spinner
+                    android:id="@+id/rentTime"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:autofillHints="Day"
+                    android:background="@drawable/search_layout"
+                    android:fontFamily="@font/consola"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTitle"
+                android:hint="Advertisement Title"
+                android:inputType="textPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_layout"
+                android:ems="50"
+                android:fontFamily="@font/consola"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editValue"
+                android:hint="Quoted Price"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_layout"
+                android:ems="50"
+                android:fontFamily="@font/consola"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_layout"
+                android:ems="50"
+                android:fontFamily="@font/consola"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editDescription"
+                android:hint="Describe your advertisement. Make it interesting!"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_layout"
+                android:ems="50"
+                android:fontFamily="@font/consola"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="Register AD"
+            android:onClick="validate"
+            android:textAllCaps="false"
+            android:fontFamily="@font/consola"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:theme="@style/themeName" />
+    </RelativeLayout>
+</RelativeLayout>

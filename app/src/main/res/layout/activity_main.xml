@@ -1,114 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    android:background="@android:color/white">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="20dp"
-        app:srcCompat="@drawable/logo" />
-
-    <EditText
-        android:id="@+id/editRegisterEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_edit_text"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:padding="10dp" />
     <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-    <EditText
-        android:id="@+id/editRegisterPassword"
+        android:id="@+id/linear1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-2dp"
-        android:background="@drawable/bg_edit_text"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="10dp" />
-    <ImageView
-        android:id="@+id/eye"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editRegisterPassword"
-        android:layout_alignBottom="@+id/editRegisterPassword"
-        android:layout_alignRight="@+id/editRegisterPassword"
-        android:layout_centerVertical="true"
-        android:layout_margin="5dp"
-        android:src="@drawable/eye"
-        />
-</RelativeLayout>
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:gravity="center"-->
-<!--        android:orientation="horizontal">-->
+        android:layout_height="wrap_content">
 
-<!--        <TextView-->
-<!--            android:id="@+id/textView"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Login"-->
-<!--            tools:text="Login" />-->
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/logo" />
 
-<!--        <Switch-->
-<!--            android:id="@+id/switchAccess"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="10dp"-->
-<!--            android:layout_marginRight="10dp" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:paddingRight="@dimen/pad_value"
+            android:paddingLeft="@dimen/pad_value"
+            android:fontFamily="@font/comicsans"
+            android:text="OnCampus"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
 
-<!--        <TextView-->
-<!--            android:id="@+id/textView2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Register" />-->
-<!--    </LinearLayout>-->
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/buttonAccess"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:padding="16dp"
-        android:text="Login"
-        android:theme="@style/themeName" />
+        android:layout_height="500dp"
+        android:background="@android:color/white"
+        android:id="@+id/ll1"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/buttonRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="10dp"
-        android:padding="16dp"
-        android:textColor="@color/colorAccent"
-        android:onClick="movetoRegister"
-        android:text="Not a user ? Register"
-        android:theme="@style/themeName"/>
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="उधार!"
+            android:paddingRight="@dimen/pad_value"
+            android:paddingLeft="@dimen/pad_value"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50dp"
+            android:fontFamily="@font/consola"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
 
-    <TextView android:id="@+id/btn_forgot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="0dp"
-        android:padding="16dp"
-        android:textColor="@color/colorAccent"
-        android:text="Forgot Password ?"
-        android:onClick="movetoForgetPassword"
-        android:theme="@style/themeName"/>
+    </LinearLayout>
+
 </LinearLayout>

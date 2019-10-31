@@ -2,13 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iiitd.onCampusUdhaar">
 
-    <!-- permission internet -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- permission gallery and camera -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -16,27 +9,62 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.AdvertisementActivity">
+        <activity android:name=".activity.RentOrderRecieved"></activity>
+        <activity android:name=".activity.OrderDelivered" />
+        <activity android:name=".activity.OrderConfirmation" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity" />
         <activity
-            android:name=".activity.MyAdvertisementActivity"
+            android:name=".activity.EditAdvertisement"
+            android:label="Edit Ad" />
+        <activity android:name=".activity.Category" />
+        <activity
+            android:name=".activity.UnderConstruction"
+            android:label="In Progress" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="Search" />
+        <activity android:name=".activity.ListAdvertisement" />
+        <activity android:name=".activity.Main2Activity" />
+        <activity
+            android:name=".activity.LoginUser"
+            android:label="Sign In" />
+        <activity
+            android:name=".activity.MyAdvertisement"
             android:label="@string/title_activity_my_advertisement"
-            android:parentActivityName=".activity.AdvertisementActivity"
+            android:parentActivityName=".activity.ListAdvertisement"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.AdvertisementActivity" />
+                android:value=".activity.ListAdvertisement" />
         </activity>
-        <activity android:name=".activity.RegisterAdvertisementActivity" />
-        <activity android:name=".activity.ProductDetailActivity"></activity>
-        <activity android:name=".activity.RegisterActivity"></activity>
-        <activity android:name=".activity.ForgotPasswordActivity"></activity>
+        <activity
+            android:name=".activity.PostAdvertisement"
+            android:label="Post Ad" />
+        <activity
+            android:name=".activity.RegisterUser"
+            android:label="Register" />
+        <activity
+            android:name=".activity.MyOrders"
+            android:label="My Orders" />
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:label="Product Details" />
+        <activity
+            android:name=".activity.ForgotPassword"
+            android:label="Reset password" />
     </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera"/>
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

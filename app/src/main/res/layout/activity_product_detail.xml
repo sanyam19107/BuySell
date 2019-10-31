@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="8dp"
-    android:orientation="vertical"
     android:padding="8dp"
     tools:context=".activity.ProductDetailActivity">
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carouselView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="400dp"
         app:fillColor="#FFFFFFFF"
         app:pageColor="#00000000"
         app:radius="6dp"
@@ -25,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Title"
+        android:layout_alignBottom="@id/carouselView"
         android:textSize="16sp" />
 
     <TextView
@@ -32,22 +32,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="R$ 200"
         android:textSize="20sp"
+        android:layout_alignBottom="@id/textTitleDetail"
         android:textStyle="bold" />
     
     <View
         android:background="@android:color/darker_gray"
         android:layout_width="match_parent"
         android:layout_height="1dp" />
-
-    <TextView
-        android:id="@+id/textStateDetail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_location_on_purple_24dp"
-        android:padding="8dp"
-        android:text="SP" />
 
     <View
         android:layout_width="match_parent"
@@ -60,16 +52,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:paddingBottom="10dp"
         android:text="Description" />
 
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonAccess2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="visualizePhone"
-        android:text="Phone"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/consola"
+        android:gravity="center"
+        android:text="Book"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:theme="@style/themeName" />
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/buttonAccess2"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="-406dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/consola"
+        android:gravity="center"
+        android:onClick="openHangouts"
+        android:text="Open Hangouts"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
         android:theme="@style/themeName" />
 
 
-</LinearLayout>
+</RelativeLayout>
