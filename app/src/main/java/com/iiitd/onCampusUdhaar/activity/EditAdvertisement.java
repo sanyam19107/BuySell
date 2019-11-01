@@ -215,6 +215,7 @@ public class EditAdvertisement extends AppCompatActivity
         String description = fieldDescription.getText().toString();
 
         Advertisement advertisement = new Advertisement();
+        advertisement.setSellerID(ConfigurationFirebase.getIdUser());
         advertisement.setCategory(category);
         advertisement.setRentSell(rentSell);
 

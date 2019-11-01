@@ -52,6 +52,9 @@
             android:name=".activity.RegisterUser"
             android:label="Register" />
         <activity
+            android:name=".activity.rating"
+            android:label="Register" />
+        <activity
             android:name=".activity.MyOrders"
             android:label="My Orders" />
         <activity
