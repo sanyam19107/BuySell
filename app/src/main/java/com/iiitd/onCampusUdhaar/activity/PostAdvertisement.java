@@ -14,6 +14,9 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+
+
+//import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.NonNull;
@@ -98,19 +101,21 @@ public class PostAdvertisement extends AppCompatActivity
 
     private void savePhotoStorage(String urlString){
 
-        StorageReference imageAdvertisement = storage.child("images")
+        final StorageReference imageAdvertisement = storage.child("images")
                 .child("advertisement")
                 .child(advertisement.getIdAdvertisement())
                 .child("image");
 
         // make upload of file
-        UploadTask uploadTask = imageAdvertisement.putFile( Uri.parse(urlString) );
+        UploadTask uploadTask = imageAdvertisement.putFile(Uri.parse(urlString));
 
         uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
+//                Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
                 Uri firebaseUrl = taskSnapshot.getDownloadUrl();
+//                Uri firebaseUrl = uri.getResult();
                 listUrlPhotos = firebaseUrl.toString();
 
                 advertisement.setPhoto(listUrlPhotos);
@@ -125,7 +130,7 @@ public class PostAdvertisement extends AppCompatActivity
             public void onFailure(@NonNull Exception e) {
                 showMessageError("Failed to upload");
                 Log.i("INFO", "Failed to upload: " + e.getMessage());
-                dialog.dismiss();
+                dismissDialog();
             }
         });
     }

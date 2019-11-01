@@ -9,8 +9,8 @@ import java.util.List;
 public class UserDetails implements Serializable {
     private String idUser;
     private String name;
-    private int rating;
-    private int noOfRating;
+    private String rating;
+    private String noOfRating;
 
     public String getName() {
         return name;
@@ -20,19 +20,19 @@ public class UserDetails implements Serializable {
         this.name = name;
     }
 
-    public int getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 
-    public int getNoOfRating() {
+    public String getNoOfRating() {
         return noOfRating;
     }
 
-    public void setNoOfRating(int noOfRating) {
+    public void setNoOfRating(String noOfRating) {
         this.noOfRating = noOfRating;
     }
 

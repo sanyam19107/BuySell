@@ -118,6 +118,7 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database:15.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-storage:15.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth:15.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth:15.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-core:15.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-connection:15.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics:15.0.2@aar" level="project" />
@@ -125,6 +126,8 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid:15.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common:15.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-flags:15.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-api-phone:15.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-base:15.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-iid-interop:15.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base:15.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks:15.0.1@aar" level="project" />

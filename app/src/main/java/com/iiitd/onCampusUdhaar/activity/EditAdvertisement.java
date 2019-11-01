@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import androidx.annotation.NonNull;
 
+//import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -181,7 +182,9 @@ public class EditAdvertisement extends AppCompatActivity
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
+//                Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
                 Uri firebaseUrl = taskSnapshot.getDownloadUrl();
+//                Uri firebaseUrl = uri.getResult();
                 listUrlPhotos = firebaseUrl.toString();
 
                 advertisement.setPhoto(listUrlPhotos);
@@ -196,7 +199,7 @@ public class EditAdvertisement extends AppCompatActivity
             public void onFailure(@NonNull Exception e) {
                 showMessageError("Failed to upload");
                 Log.i("INFO", "Failed to upload: " + e.getMessage());
-                dialog.dismiss();
+                dismissDialog();
             }
         });
     }

@@ -5,19 +5,25 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridLayout;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 import com.iiitd.onCampusUdhaar.R;
 import com.iiitd.onCampusUdhaar.other.ConfigurationFirebase;
+import com.iiitd.onCampusUdhaar.other.UserDetails;
 
 public class Category extends AppCompatActivity {
 
@@ -44,10 +50,24 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (conMgr.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED
-                        || conMgr.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED)
-                    startActivity(new Intent(getApplicationContext(), SearchActivity.class));
-                else
+                        || conMgr.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+//                    startActivity(new Intent(getApplicationContext(), SearchActivity.class));
+                    DatabaseReference newUser = ConfigurationFirebase.getFirebase().child("users").
+                            child(ConfigurationFirebase.getIdUser());
 
+                    newUser.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            UserDetails user = dataSnapshot.getValue(UserDetails.class);
+                            Log.d("User", user.getRating() + user.getName());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                } else
                     Snackbar.make(parentLayout, R.string.switch_on, Snackbar.LENGTH_SHORT).show();
             }
         });

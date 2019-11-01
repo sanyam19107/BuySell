@@ -28,6 +28,7 @@
     <string name="bookstatus4">Order Delivered</string>
     <string name="bookstatus5">Order Complete</string>
     <string name="title_activity_edit_advertisement">EditAdvertisement</string>
+    <string name="invalidEmail">Please login using valid IIITD Email ID</string>
     <string-array name="category">
         <item>Sports Goods</item>
         <item>Clothing</item>

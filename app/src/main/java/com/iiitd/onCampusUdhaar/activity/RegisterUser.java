@@ -39,6 +39,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth firebaseAuth;
     private View parentLayout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -130,8 +131,8 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
 
                             UserDetails userDetails = new UserDetails();
                             userDetails.setName(name);
-                            userDetails.setNoOfRating(0);
-                            userDetails.setRating(0);
+                            userDetails.setNoOfRating("0");
+                            userDetails.setRating("0");
                             userDetails.save();
                             //finish();
                             firebaseAuth.getCurrentUser().sendEmailVerification()
@@ -151,7 +152,6 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                                     }
                                 }
                             }) ;
-
 
                         }
                         else

@@ -82,7 +82,6 @@ public class ProductDetailActivity extends AppCompatActivity {
         }
         if(firebaseAuth.getCurrentUser()!=null && firebaseAuth.getCurrentUser().isEmailVerified()) {
 
-
             String idUser = ConfigurationFirebase.getIdUser();
             if (sellerID.equalsIgnoreCase(idUser) || advertisementSelect.getStatus() != 1) {
                 bookButton.setVisibility(View.INVISIBLE);
@@ -147,9 +146,8 @@ public class ProductDetailActivity extends AppCompatActivity {
         return true;
     }
 
-
-
     public void openHangouts(View view) {
+        String email = sellerEmailID;
         Intent intent = new Intent(Intent.ACTION_SEND,
                 Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.talk"));
         intent.setType("text/plain");

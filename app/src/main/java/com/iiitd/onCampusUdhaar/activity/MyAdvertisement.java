@@ -8,8 +8,13 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -59,6 +64,7 @@ public class MyAdvertisement extends AppCompatActivity {
     private View parentLayout;
     private FirebaseAuth authentication;
     private Advertisement advertisementSelect;
+    private GoogleSignInClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -317,23 +323,42 @@ public class MyAdvertisement extends AppCompatActivity {
                     authentication.signOut();
                     invalidateOptionsMenu();
                     finish();
+                    signOut();
                     startActivity(new Intent(getApplicationContext(), Category.class));
                     Toast.makeText(getApplicationContext(), R.string.logout_text, Toast.LENGTH_LONG).show();
-                    break;
                 }
+                break;
                 case R.id.my_orders:{
                     invalidateOptionsMenu();
                     finish();
                     startActivity(new Intent(getApplicationContext(), MyOrders.class));
-                    break;
                    // Intent i = new Intent(MyAdvertisement.this, EditAdvertisement.class);
                     //i.putExtra("advertisementSelected", advertisementSelect);
                     //startActivity(i);
                     //advertisementUserRef
                 }
+                 break;
             }
         } else
             Snackbar.make(parentLayout, R.string.switch_on, Snackbar.LENGTH_SHORT).show();
         return super.onOptionsItemSelected(item);
+    }
+
+    private void signOut() {
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+
+        // Build a GoogleSignInClient with the options specified by gso.
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+
+        mGoogleSignInClient.signOut()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        // ...
+                    }
+                });
     }
 }
