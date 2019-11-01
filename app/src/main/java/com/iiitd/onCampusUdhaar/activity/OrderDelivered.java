@@ -7,12 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.ValueEventListener;
 import com.iiitd.onCampusUdhaar.R;
-import com.iiitd.onCampusUdhaar.other.Advertisement;
 import com.iiitd.onCampusUdhaar.other.BookingOrder;
 import com.iiitd.onCampusUdhaar.other.ConfigurationFirebase;
 
@@ -43,7 +39,7 @@ public class OrderDelivered extends AppCompatActivity {
                 finish();
             }else{
                 orderRef.child(orderDeliver.getidOrder()).child("status").setValue(5);
-                Intent intent=new Intent(getApplicationContext(),rating.class);
+                Intent intent=new Intent(getApplicationContext(), RatingActivity.class);
                 startActivity(intent);
                 intent.putExtra("orderDeliver",orderDeliver);
                 Toast.makeText(getApplicationContext(), "Product Received and Order Completed Successfully", Toast.LENGTH_SHORT).show();
