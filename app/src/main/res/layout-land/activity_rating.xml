@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/content"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:fillViewport="true"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    android:fillViewport="true"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:ignore="MissingDefaultResource">
 
     <TextView
@@ -20,19 +19,19 @@
         android:layout_marginLeft="360dp"
 
         android:layout_marginTop="10dp"
-        android:textColor="@color/colorPrimary"
+        android:text="Skip"
 
-        android:text="Skip" />
+        android:textColor="@color/colorPrimary" />
 
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="391dp"
         android:layout_height="166dp"
-        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-
         android:layout_marginTop="300dp"
+
+        android:layout_marginRight="10dp"
         android:ems="10"
         android:inputType="textPersonName" />
 
@@ -49,21 +48,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
+
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/consola"
             android:gravity="center"
             android:text="Submit"
             android:textAllCaps="false"
-            android:fontFamily="@font/consola"
-            android:textStyle="bold"
-            android:textSize="18dp"
             android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
             android:theme="@style/themeName" />
     </RelativeLayout>
-
 
 
 </RelativeLayout>
